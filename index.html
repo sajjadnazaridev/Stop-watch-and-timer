@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>stopwatch</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="alert passive-alert">
+      <div class="content-alert">
+        <h1 class="text-alert"></h1>
+        <button class="close-btn">OK</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header">
+        <div class="stopwatch-section">
+          <i class="ri-timer-flash-line"></i>
+        </div>
+        <div class="timer-section">
+          <i class="ri-timer-2-line"></i>
+        </div>
+      </div>
+
+      <div class="container-stopwatch passive-section">
+        <p class="stopwatch">
+          <span class="minute">00 </span> : <span class="second">00 </span> :
+          <span class="milli-second">00</span>
+        </p>
+
+        <div class="container-btns">
+          <button id="start" class="action-btn">Start</button>
+          <button id="stop" class="action-btn">Stop</button>
+          <button id="reset" class="action-btn">Reset</button>
+        </div>
+      </div>
+
+      <div class="container-timer passive-section">
+        <div class="timer">
+          <input type="number" class="number-timer minute-num" maxlength="2" /> :
+          <input type="number" class="number-timer second-num" maxlength="2" /> :
+          <input type="number" class="number-timer milli-num" maxlength="2" />
+        </div>
+        <div class="container-btns">
+          <button id="start-timer" class="action-btn">Start</button>
+          <button id="stop-timer" class="action-btn">Stop</button>
+          <button id="reset-timer" class="action-btn">Reset</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
